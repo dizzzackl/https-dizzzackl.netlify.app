@@ -1,0 +1,59 @@
+/*html {
+  background-image: url(bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+img.background {
+  min-height: 100%;
+  min-width: 640px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}*/
+  /* Зависит от размера изображения */
+  @media screen and (max-width: 1200px){
+	img.bg {
+	  left: 50%;
+	  margin-left: -320px;
+	}
+  }
+
+
+/* внешние границы таблицы серого цвета толщиной 1px */
+table {
+   border: 1px solid grey;
+}
+/* границы ячеек первого ряда таблицы */
+th {
+   border: 1px solid grey;
+}
+/* границы ячеек тела таблицы */
+td {
+   border: 1px solid grey;
+}
+/* сделает ширину таблицы равной ширине блока контейнера, в котором она находится */
+table {
+   width: 100%;
+}
+/* задаст фиксированную ширину для таблицы */
+table {
+   width: 600px;
+}
+
+.one{
+    position: relative; /* Относительное позиционирование */
+    left: 150px; /* Сдвигаем вниз */
+    bottom: 100px;
+
+}
+
+.icon{
+    cursor: help;
+}
