@@ -57,3 +57,9 @@ table {
 .icon{
     cursor: help;
 }
+html{
+            background: #1e1e1e;
+        }
+table{
+    background: #d7d5d5;
+}
