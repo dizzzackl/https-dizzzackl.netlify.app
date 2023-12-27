@@ -65,7 +65,7 @@
         /* Стили для ссылок */
         #main_nav li a,
         #main_nav li ul li a {
-            color: #000000;
+            color: #ffffff;
             font-family: "Times New Roman", serif;
             font-size: 0.9em;
             font-weight: bold;
@@ -78,7 +78,7 @@
         #main_nav li:hover > a,
         #main_nav li ul a:hover {
             color: #000000;
-            background-color: #595353;
+            background-color: #f7f7f7;
         }
 
         /* Стили для активной ссылки */
@@ -124,7 +124,6 @@
 
         /* Стили для даты новости */
         .novosti p:first-child{
-
             margin-top: 10px;
         }
 
@@ -133,12 +132,15 @@
             color: #3d4c60;
             margin-bottom: 10px;
         }
-        @media screen and (max-width: 480px) {
-    .novosti {
-        margin: 0 auto;
-    }
-}
 
+        /* Медиа-запрос для мобильных устройств */
+        @media screen and (max-width: 480px) {
+            .content {
+                margin: 0 auto;
+                margin-left: 0;
+                margin-right: 30px;
+            }
+        }
     </style>
 </head>
 
@@ -147,7 +149,7 @@
         <nav>
             <ul id="main_nav">
                 <li><a href="/html/TGK.html">Телеграм канал</a></li>
-                <li><a>Коды вирусов</a>
+                <li><a href="/html/codes.html">Коды вирусов</a>
                     <ul>
                         <li><a href="/html/codes/Python.html">Python</a></li>
                         <li><a href="/html/codes/Cpls.html">C плюс плюс</a></li>
