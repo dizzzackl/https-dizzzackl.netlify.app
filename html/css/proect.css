@@ -1,0 +1,94 @@
+.ttt {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: chartreuse;
+
+
+
+}
+.ava {
+    background-image: url("progekt/1.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; /* задайте начальную высоту для фото */
+
+  /* Медиа-запрос для устройств с шириной экрана не более 768 пикселей */
+  @media (max-width: 768px) {
+    height: 200px; /* измените высоту фото для более узкого экрана */
+  }
+
+  /* Медиа-запрос для устройств с шириной экрана не более 576 пикселей */
+  @media (max-width: 576px) {
+    height: 150px; /* измените высоту фото для еще более узкого экрана */
+  }
+}
+.photo1 {
+    background-image: url("progekt/1.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; /* задайте начальную высоту для фото */
+
+  /* Медиа-запрос для устройств с шириной экрана не более 768 пикселей */
+  @media (max-width: 768px) {
+    height: 200px; /* измените высоту фото для более узкого экрана */
+  }
+
+  /* Медиа-запрос для устройств с шириной экрана не более 576 пикселей */
+  @media (max-width: 576px) {
+    height: 150px; /* измените высоту фото для еще более узкого экрана */
+  }
+}
+.photo2 {
+    background-image: url("progekt/2.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; /* задайте начальную высоту для фото */
+
+  /* Медиа-запрос для устройств с шириной экрана не более 768 пикселей */
+  @media (max-width: 768px) {
+    height: 200px; /* измените высоту фото для более узкого экрана */
+  }
+
+  /* Медиа-запрос для устройств с шириной экрана не более 576 пикселей */
+  @media (max-width: 576px) {
+    height: 150px; /* измените высоту фото для еще более узкого экрана */
+  }
+}
+.photo3 {
+    background-image: url("progekt/3.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; /* задайте начальную высоту для фото */
+
+  /* Медиа-запрос для устройств с шириной экрана не более 768 пикселей */
+  @media (max-width: 768px) {
+    height: 200px; /* измените высоту фото для более узкого экрана */
+  }
+
+  /* Медиа-запрос для устройств с шириной экрана не более 576 пикселей */
+  @media (max-width: 576px) {
+    height: 150px; /* измените высоту фото для еще более узкого экрана */
+  }
+}
+
+
+h3{
+     text-align:center;
+}
+
+html{
+    font-size: 100%;
+    height: auto;
+
+        }
+
+
+body{
+    width: auto;
+    height: auto;
+}
