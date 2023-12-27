@@ -1,25 +1,45 @@
 .ttt {
+    width: auto;
+    height: auto;
     border-radius: 10px;
     background-color: chartreuse;
-    width: 150px;
-    height: 30px;
+
+
 
 }
 .ava{
+    position: fixed;
     text-align: center;
+    height: auto;
+    width: auto;
+
 }
 h3{
      text-align:center;
 }
 .two{
     position: static;
-    width: 50%;
+    width: auto;
     height: auto;
 }
 
 .htre{
     position: static;
-    width: 50%;
+    width: auto;
     height: auto;
     text-align:right;
+}
+html{
+    width: auto;
+    height: auto;
+
+        }
+img{
+    position: fixed;
+    width: auto;
+    height: auto;
+}
+body{
+    width: auto;
+    height: auto;
 }
