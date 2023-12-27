@@ -15,25 +15,33 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Стили для header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #8d6c23;
+            z-index: 999;
         }
 
         /* Стили для меню */
         #main_nav {
-            position: relative;
-            top: 15px;
-            margin-top: 14px;
-            margin-left: 10px;
-            width: 20%;
-            background-color: #8d6c23;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            list-style: none;
+            margin: 0;
+            padding: 0;
         }
 
         /* Стили для основных пунктов меню */
         #main_nav > li {
-            display: inline-block;
             padding: 0 8px;
             border-left: 1px dotted #fff;
-            position: relative;
-            z-index: 2;
         }
 
         /* Стили для выпадающего подменю */
@@ -42,7 +50,6 @@
             position: absolute;
             top: 100%;
             left: 0;
-            z-index: 1;
             width: 155px;
             background-color: #fff;
             padding: 10px;
@@ -58,24 +65,25 @@
         /* Стили для ссылок */
         #main_nav li a,
         #main_nav li ul li a {
-            color: #000000;
+            color: #ffffff;
             font-family: "Times New Roman", serif;
             font-size: 0.9em;
             font-weight: bold;
             text-decoration: none;
             outline: none;
-            padding-bottom: 17px;
+            padding: 10px 20px;
         }
 
         /* Стили при наведении на пункты меню */
         #main_nav li:hover > a,
         #main_nav li ul a:hover {
-            color: black;
+            color: #000000;
+            background-color: #595353;
         }
 
         /* Стили для активной ссылки */
         #main_nav .active a {
-            color: black;
+            color: #000000;
         }
 
         /* Стили для подменю при наведении на основной пункт меню */
@@ -83,43 +91,85 @@
             display: block;
         }
 
+        /* Стили для контента */
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+        }
+
         /* Стили для новостей */
         .novosti {
             background-color: #f7f7f7;
             padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
+        /* Стили для заголовка новостей */
+        .novosti h1 {
+            color: #3d4c60;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Стили для линии разделителя */
+        .hrmenu {
+            border: 0;
+            height: 1px;
+            width: 100%;
+            background-color: #8d6c23;
+            margin: 10px 0;
+        }
+
+        /* Стили для даты новости */
+        .novosti p:first-child{
+
+            margin-top: 10px;
+        }
+
+        /* Стили для текста новости */
+        .novosti p:not(:first-child){
+            color: #3d4c60;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
 <body>
-    <ul id="main_nav">
-        <li><a href="/html/TGK.html">Телеграм канал</a></li>
-        <li><a href="/html/codes.html">Коды вирусов</a>
-            <ul>
-                <li><a href="/html/codes/Python.html">Python</a></li>
-                <li><a href="/html/codes/Cpls.html">C плюс плюс</a></li>
-                <li><a href="/html/codes/Csharp.html">Csharp</a></li>
-                <li><a href="/html/codes/js.html">JS</a></li>
+    <header>
+        <nav>
+            <ul id="main_nav">
+                <li><a href="/html/TGK.html">Телеграм канал</a></li>
+                <li><a href="/html/codes.html">Коды вирусов</a>
+                    <ul>
+                        <li><a href="/html/codes/Python.html">Python</a></li>
+                        <li><a href="/html/codes/Cpls.html">C плюс плюс</a></li>
+                        <li><a href="/html/codes/Csharp.html">Csharp</a></li>
+                        <li><a href="/html/codes/js.html">JS</a></li>
+                    </ul>
+                </li>
+                <li><a href="/html/proect.html">Мой проект</a></li>
             </ul>
-        </li>
-        <li><a href="/html/proect.html">Мой проект</a></li>
-    </ul>
+        </nav>
+    </header>
 
-    <div class="novosti">
-        <h1>Новости сайта Dizzzackl™</h1>
-        <hr class="hrmenu">
-        <p>27.12.2023</p>
-        <p>Созданы страницы:</p>
-        <p>• Коды вирусов</p>
-        <p>• Телеграмм канал</p>
-        <p>• Мой проект</p>
-        <hr>
-        <p>28.12.2023</p>
-        <p>Обновленно:</p>
-        <p>•Новое меню на главной странице</p>
-        <p>•Сдланно выпадающее меню</p>
-        <hr>
+    <div class="content">
+        <div class="novosti">
+            <h1>Новости сайта Dizzzackl™</h1>
+            <hr class="hrmenu">
+            <p>27.12.2023</p>
+            <p>Созданы страницы:</p>
+            <p>• Коды вирусов</p>
+            <p>• Телеграмм канал</p>
+            <p>• Мой проект</p>
+            <hr>
+            <p>28.12.2023</p>
+            <p>Обновленно:</p>
+            <p>• Новое меню на главной странице</p>
+            <p>• Сделано выпадающее меню</p>
+            <hr>
+        </div>
     </div>
 </body>
 </html>
