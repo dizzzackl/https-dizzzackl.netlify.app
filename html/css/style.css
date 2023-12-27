@@ -55,6 +55,8 @@ table {
 }
 
 .icon{
+    width:auto;
+    border-radius: 20px;
     cursor: help;
 }
 html{
@@ -72,31 +74,65 @@ body{
 }
 
 .menuone{
+    z-index:99999999;
+    border:1px solid;
+
+    margin:auto;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 10px;
+
+    background: #444444;
 }
 button{
 
         border-radius: 20px;
     }
 .button1{
+    z-index:99999999;
     position: fixed;
-    top: 20px;
-    left: 70px;
+    top: 40px;
+    left: 100px;
 }
 .button2{
+    z-index:99999999;
     position: fixed;
-    top: 20px;
-    left: 190px;
+    top: 40px;
+    left: 250px;
 }
 .button3{
+    z-index:99999999;
     position: fixed;
-    top: 20px;
-    left: 350px;
+    top: 40px;
+    left: 450px;
 }
 .h11{
 
     top: 170px;
     left: 350px;
 }
+.novosti{
+    border-radius: 10px;
+    position: relative;
+    top: 200px;
+    left: 40px;
+    width: 70%;
+    height: auto;
+
+
+
+    border:1px solid;
+
+    margin:auto;
+
+    background: #3d4c60;
+
+
+
+}
+.h111{
+    color: rgba(55, 47, 66, 0.83);
+}
+.hrmenu{
+    color: rgba(67, 55, 82, 0.83);
+
+ }
