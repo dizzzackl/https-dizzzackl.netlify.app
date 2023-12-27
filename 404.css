@@ -8,6 +8,10 @@
   left: 0;
 }
 html{
-    width:50%;
+    width:auto;
     background: #1e1e1e;
         }
+body{
+    width: auto;
+    height: auto;
+}
