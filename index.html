@@ -1,41 +1,125 @@
-<!doctype html>
-<html lang=ru>
-<head>
+<!DOCTYPE html>
+<html lang="ru">
 
+<head>
     <meta name="description" content="Сайт с кодами вирусов и пк угроз (DIZZZACKL)">
     <link rel="icon" type="image/x-icon" href="html/dowload/icon.jpg">
-    <!--<img src="css/bg-img.jpg" class="background" />-->
-    <link rel="stylesheet" href="html/css/style.css" >
+    <link rel="stylesheet" href="html/css/style.css">
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
+
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Стили для меню */
+        #main_nav {
+            position: relative;
+            top: 15px;
+            margin-top: 14px;
+            margin-left: 10px;
+            width: 20%;
+            background-color: #8d6c23;
+        }
+
+        /* Стили для основных пунктов меню */
+        #main_nav > li {
+            display: inline-block;
+            padding: 0 8px;
+            border-left: 1px dotted #fff;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Стили для выпадающего подменю */
+        #main_nav ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+            width: 155px;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Стили для подпунктов меню */
+        #main_nav li ul li {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Стили для ссылок */
+        #main_nav li a,
+        #main_nav li ul li a {
+            color: #000000;
+            font-family: "Times New Roman", serif;
+            font-size: 0.9em;
+            font-weight: bold;
+            text-decoration: none;
+            outline: none;
+            padding-bottom: 17px;
+        }
+
+        /* Стили при наведении на пункты меню */
+        #main_nav li:hover > a,
+        #main_nav li ul a:hover {
+            color: black;
+        }
+
+        /* Стили для активной ссылки */
+        #main_nav .active a {
+            color: black;
+        }
+
+        /* Стили для подменю при наведении на основной пункт меню */
+        #main_nav li:hover > ul {
+            display: block;
+        }
+
+        /* Стили для новостей */
+        .novosti {
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+    </style>
 </head>
+
 <body>
+    <ul id="main_nav">
+        <li><a href="/html/TGK.html">Телеграм канал</a></li>
+        <li><a href="/html/codes.html">Коды вирусов</a>
+            <ul>
+                <li><a href="/html/codes/Python.html">Python</a></li>
+                <li><a href="/html/codes/C++.html">C++</a></li>
+                <li><a href="/html/codes/C%23.html">C#</a></li>
+                <li><a href="/html/codes/js.html">JS</a></li>
+            </ul>
+        </li>
+        <li><a href="/html/proect.html">Мой проект</a></li>
+    </ul>
 
-<div class="menuone" style="width:50%">
-
-     <img  class="icon" src="html/dowload/icon.jpg" width="64" height="64" >
-     <a  class="button1" href="html/codes.html"><button>Коды вирусов</button></a>
-     <a class="button2" href="html/TGK.html"><button>Телеграмм канал</button></a>
-     <a class="button3" href="/html/proect.html"><button>Мой проект</button></a>
-    <hr class="menuhr">
-
-</div>
-
-<div class="novosti">
-    <h1>Новости сайта Dizzzackl™</h1>
-    <hr class="hrmenu">
-    <p>27.12.2023</p>
-    <p>Созданны страницы </p>
-    <p>•Коды вирусов</p>
-    <p>•Телеграмм канал</p>
-    <p>•Мой проект</p>
-    <hr>
-
-</div>
-
-
+    <div class="novosti">
+        <h1>Новости сайта Dizzzackl™</h1>
+        <hr class="hrmenu">
+        <p>27.12.2023</p>
+        <p>Созданы страницы:</p>
+        <p>• Коды вирусов</p>
+        <p>• Телеграмм канал</p>
+        <p>• Мой проект</p>
+        <hr>
+        <p>28.12.2023</p>
+        <p>Обновленно:</p>
+        <p>•Новое меню на главной странице</p>
+        <p>•Сдланно выпадающее меню</p>
+        <hr>
+    </div>
 </body>
 </html>

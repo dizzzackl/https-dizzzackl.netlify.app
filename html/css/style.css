@@ -74,6 +74,15 @@ body{
 }
 
 .menuone{
+{
+   display: none;
+}
+.main-item:focus ~ .sub-menu,
+.main-item:active ~ .sub-menu,
+.sub-menu:hover
+{
+   display: block;
+}
     z-index:99999999;
     border:1px solid;
 
@@ -81,25 +90,29 @@ body{
     position: fixed;
     top: 10px;
 
-    background: #444444;
+    background: rgba(68, 68, 68, 0.5);
 }
 button{
 
         border-radius: 20px;
     }
 .button1{
+    width: auto;
     z-index:99999999;
     position: fixed;
     top: 40px;
     left: 100px;
 }
 .button2{
+    width: auto;
     z-index:99999999;
     position: fixed;
     top: 40px;
     left: 250px;
 }
 .button3{
+    width: auto;
+    height: 10px;
     z-index:99999999;
     position: fixed;
     top: 40px;
