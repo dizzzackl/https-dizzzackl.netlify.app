@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Админ панель</title>
     <link rel="stylesheet" href="admin.css">
     <script src="admin.js"></script>
@@ -20,13 +19,15 @@
             <label for="password">Пароль:</label>
             <input type="password" id="password" name="password">
 
-            <button type="submit" onclick="checkCredentials()">Войти</button>
+            <button type="submit" onclick="checkCredentials(event)">Войти</button>
         </form>
         <script>
             var password_admin = 2010; // ваша переменная
             var username_admin = "gera";
 
-            function checkCredentials() {
+            function checkCredentials(event) {
+                event.preventDefault(); // Отменить стандартное поведение формы
+
                 var usernameInput = document.getElementById("username").value;
                 var passwordInput = document.getElementById("password").value;
 
