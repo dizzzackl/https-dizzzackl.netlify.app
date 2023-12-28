@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Админ панель</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Админ-страница</h1>
+        <form>
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password">
+
+            <button type="submit" onclick="checkCredentials()">Войти</button>
+        </form>
+        <script>
+            var password_admin = 2010; // ваша переменная
+            var username_admin = "gera";
+
+            function checkCredentials() {
+                var usernameInput = document.getElementById("username").value;
+                var passwordInput = document.getElementById("password").value;
+
+                if (parseInt(passwordInput) === password_admin) {
+                    console.log("Верный пароль");
+                    if (usernameInput === username_admin) {
+                        console.log("Верное имя пользователя");
+                        window.location.href = "admin_panel27032010.html"; // Редирект на страницу администратора
+                    } else {
+                        console.log("Неверное имя пользователя");
+                        window.location.href = "https://dizzzackl.netlify.app/html/404"; // Редирект на страницу ошибки
+                    }
+                } else {
+                    console.log("Неверный пароль");
+                    window.location.href = "https://dizzzackl.netlify.app/html/404"; // Редирект на страницу ошибки
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
