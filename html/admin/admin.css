@@ -46,15 +46,26 @@ input[type="submit"]:hover {
     background-color: #704a14;
 }
 
-.loadone{
-    position: static;
-    top: 10%;
-    left: 50%;
-    right:50%;
+
+.adminhello{
+    h1{
+        position: static;
+        top: 10%;
+        left: 10%;
+        right: 90%;
+        color: #3d4c60;
+        width: 20%;
+        height: 20%;
+    }
+    hr{
+        color: #3d4c60;
+        border-width: 20px;}
 }
-.loadtwo{
-    position: fixed;
-    top: 15%;
-    left: 50%;
-    right:50%;
+.adminmenu{
+    button{
+        color: #f0f0f0;
+        background-color: #3d4c60;
+
+
+    }
 }
