@@ -46,3 +46,15 @@ input[type="submit"]:hover {
     background-color: #704a14;
 }
 
+.loadone{
+    position: static;
+    top: 10%;
+    left: 50%;
+    right:50%;
+}
+.loadtwo{
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    right:50%;
+}
